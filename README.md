@@ -1,26 +1,30 @@
-# ARTI4208
+# ARTI4208-Grupo6 / repos
 
-Repositorio principal para todos los archivos (docs, ejecutables, fuentes, imágenes, eap, artefactos y demás componentes) requeridos dentro del proyecto de la cátedra ARTI4208 - Arquitecturas de Nueva Generación. 
+Repositorio principal para todos los archivos (docs, ejecutables, fuentes, imágenes, eap, artefactos y demás componentes) requeridos dentro del proyecto de la cátedra ARTI4208 - Arquitecturas de Nueva Generación. Los cuales soportan las distintas experimentaciones que se realizan a lo largo del curso. 
 
 ## Archivos 
 
 Acá se describe el contenido de los archivos utilizados durante el proyecto en cada una de sus versiones. 
 
-### Carpetas vm_base / vm_dock
+### Carpetas Box
 
-Son las carpetas que almacenan la configuración del ambiente a virtualizar realizado para el proyecto. 
+Son las carpetas que almacenan la configuración del ambiente a virtualizar realizado para el proyecto. Cada experimento representa una VM_BOX, dependiendo de lo que se desea verificar. 
 _vm_base_ es la primera máquina virtual creada, asociada directamente dentro del contexto de _vagrant_, a la box Ubunt/trusty64. 
 _vm_dock_ es la segunda máquina virtual creada, asociada directamente dentro del contexto de _vagrant_, a la box Ubunt/vivid64. En ésta última si instaló en un contendedor de docker una imagen de _mongoDB_. 
+_vm_iot_ es la tercera máquina virtual creada, asociada directamente con los temas de IoT y Analítica. La box es Ubunt/trusty64. 
 
-Ambas carpetas contienen, además del repositorio, los siguientes archivos: 
 
-**- vagrantfile:** Se modifica el documento original entregado en los talleres, para que fuese personalizado. 
+Las carpetas anteriores contienen, además del repositorio, los siguientes archivos: 
 
-**- install.sh:** Se deja intacto a como vino el original.
+**- vagrantfile:** Contiene la configuración Vagrant para automatizar el inicio del ambiente. Se modifica el documento original entregado en los talleres, para que fuese personalizado. 
 
-**- init.sh:** Se deja intacto a como vino el original.
+**- install.sh:** Contiene las instrucciones necesarias para las instalaciones requeridas en la Box.
 
-**- keys.sh:** Se deja intacto a como vino el original.
+**- init.sh:** Es opcional. Se deja intacto a como vino el original.
+
+**- keys.sh:** Registra los parámetros de seguridad. Se deja intacto a como vino el original.
+
+**- docker.sh:** Es opcional. Contiene las instrucciones para descargar las imagenes y correr los contenedores al iniciar el ambiente. 
 
 ### Carpetas docs
 
