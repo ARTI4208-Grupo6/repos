@@ -9,9 +9,9 @@ Acá se describe el contenido de los archivos utilizados durante el proyecto en 
 ### Carpetas Box
 
 Son las carpetas que almacenan la configuración del ambiente a virtualizar realizado para el proyecto. Cada experimento representa una VM_BOX, dependiendo de lo que se desea verificar. 
-_vm_base_ es la primera máquina virtual creada, asociada directamente dentro del contexto de _vagrant_, a la box Ubunt/trusty64. 
-_vm_dock_ es la segunda máquina virtual creada, asociada directamente dentro del contexto de _vagrant_, a la box Ubunt/vivid64. En ésta última si instaló en un contendedor de docker una imagen de _mongoDB_. 
-_vm_iot_ es la tercera máquina virtual creada, asociada directamente con los temas de IoT y Analítica. La box es Ubunt/trusty64. 
+- _vm_base_ es la primera máquina virtual creada, asociada directamente dentro del contexto de _vagrant_, a la box Ubunt/trusty64. 
+- _vm_dock_ es la segunda máquina virtual creada, asociada directamente dentro del contexto de _vagrant_, a la box Ubunt/vivid64. En ésta última si instaló en un contendedor de docker una imagen de _mongoDB_. 
+- _vm_iot_ es la tercera máquina virtual creada, asociada directamente con los temas de IoT y Analítica. La box es Ubunt/trusty64. 
 
 
 Las carpetas anteriores contienen, además del repositorio, los siguientes archivos: 
